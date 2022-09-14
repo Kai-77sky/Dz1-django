@@ -7,3 +7,7 @@ def client(request):
     client_list = Client.objects.all()
     context['client_list'] = client_list
     return render(request, 'Client.html', context)
+
+
+def base(request):
+    return render(request, 'base.html')
